@@ -9,13 +9,16 @@ body {
 
 /*header*/
 header {
-  display:flex;
+  display: flex;
   width: 100%;
   height: 69px;
   position: fixed;
   border-bottom: 1px solid seashell;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  top: 0;
+  background-color: black;
 }
 
 .logo {
@@ -34,4 +37,31 @@ nav a{
   text-decoration: underline;
   margin-right: 10px;
   padding-right: 10px;
+}
+
+/*main content*/
+.main {
+  padding-top: 69px;
+  display: flex;
+  justify-content: center;
+}
+
+#mission {
+  background-image: url('../../resources/images/img-mission-background.jpg');
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  padding-top: 10px;
+  margin: 0;
+}
+
+.container {
+  background-color: black;
+  width: 100%;
 }
